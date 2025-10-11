@@ -11,10 +11,8 @@
 
 with source_data as (
 
-    select 1 as id
-    union all
-    select null as id
-
+    select dep_id, dep_name 
+    from {{ source ('dlsnowflake.dbt_dlabrador','departments')}}
 )
 
 select *

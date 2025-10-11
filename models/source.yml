@@ -1,7 +1,12 @@
 version: 2
 
 sources:
-  - name: bigquery
+  - name: bigquery_1
+    database: dlsnowflake.dbt_dlabrador 
+    schema: dbt_dlabrador 
+    tables:
+      - name: departments 
+  - name: bigquery_2
     database: dlsnowflake 
     schema: dbt_dlabrador 
     tables:
