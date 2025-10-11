@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: bigquery
+    database: dlsnowflake 
+    schema: dbt_dlabrador 
+    tables:
+      - name: departments 
