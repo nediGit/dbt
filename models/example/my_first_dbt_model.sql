@@ -12,7 +12,7 @@
 with source_data as (
 
     select dep_id, dep_name 
-    from {{ source ('dlsnowflake.dbt_dlabrador','departments')}}
+    from {{ source ('dbt_dlabrador','departments')}}
 )
 
 select *
