@@ -5,11 +5,21 @@ models:
     - name: my_first_dbt_model
       description: "A starter dbt model"
       columns:
-          - name: id
-            description: "The primary key for this table"
+          - name: dep_id
+            description: "The primary key for department table"
+            tests:
+                - unique
+                - not_null
+          - name: dep_name
+            description: "The department name"
 
     - name: my_second_dbt_model
       description: "A starter dbt model"
       columns:
-          - name: id
-            description: "The primary key for this table"
+          - name: dep_id
+            description: "The primary key for department table"
+            tests:
+                - unique
+                - not_null
+          - name: dep_name
+            description: "The department name"
