@@ -2,7 +2,7 @@
 version: 2
 
 models:
-    - name: my_first_dbt_model
+    - name: dbt_departments
       description: "A starter dbt model"
       columns:
           - name: dep_id
@@ -13,13 +13,13 @@ models:
           - name: dep_name
             description: "The department name"
 
-    - name: my_second_dbt_model
+    - name: dbt_jobs
       description: "A starter dbt model"
       columns:
-          - name: dep_id
-            description: "The primary key for department table"
+          - name: job_id
+            description: "The primary key for job table"
             tests:
                 - unique
                 - not_null
-          - name: dep_name
-            description: "The department name"
+          - name: job_description
+            description: "The job name"
