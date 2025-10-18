@@ -5,4 +5,5 @@ sources:
     database: dlsnowflake
     schema: dbt_dlabrador 
     tables:
-      - name: departments 
+      - name: departments
+      - name: jobs 
